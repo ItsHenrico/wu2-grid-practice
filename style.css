@@ -1,21 +1,21 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    place-content: center;
 }
 
 .grid-container{
     display: grid;
-    grid-template-rows: 75px 100px;
-    place-content: center;
+    grid-template-columns: calc(75vw - 0.5rem) calc(25vw - 0.5rem);
 }
 
 .item{
     font-size: 1.2rem;
     color: #fff;
     margin: 0.25rem;
+    margin-inline: auto;
     padding: 1rem;
-    padding-inline: 25vw;
+    padding-inline: 50%;
     background-color: #0000ff;
     border-radius: 5px;
-    justify-content: center;
 }
