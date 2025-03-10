@@ -8,8 +8,8 @@ body {
     width: 90vw;
     height: 50vh;
     display: grid;
-    grid-template-rows: [row1 row-start] 1fr [row2] 1fr [row3] 1fr [row4] 1fr [row5 row-end];
-    grid-template-columns: [col1 col-start] 1fr [col2] 1fr [col3] 1fr [col3 col-end];
+    grid-template-rows: repeat(3, [row] 1fr);
+    grid-template-columns: repeat(3, [col] 1fr);
     grid-gap: 0.5rem;
 }
 
@@ -24,10 +24,8 @@ body {
 }
 
 .item1 {
-    grid-row-start: row2;
-    grid-row-end: row-end;
-    grid-column-start: col2;
-    grid-column-end: col-end;
+    grid-row: row 2 / row 4;
+    grid-column: col 1 / col 3;
     place-content: center;
     font-size: 1.2rem;
     color: #fff;
