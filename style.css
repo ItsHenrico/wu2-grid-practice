@@ -1,18 +1,21 @@
 body{
     margin: 0;
-    color: #fff;
-    font-size: 1.2rem;
     font-family: sans-serif;
-    place-content: center;
-    display: grid;
 }
 
 .grid-container{
-    .item{
-        margin: 0.25rem;
-        padding: 1rem;
-        padding-inline: 25vw;
-        background-color: #0000ff;
-        border-radius: 5px;
-    }
+    display: grid;
+    grid-template-rows: 75px 100px;
+    place-content: center;
+}
+
+.item{
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0.25rem;
+    padding: 1rem;
+    padding-inline: 25vw;
+    background-color: #0000ff;
+    border-radius: 5px;
+    justify-content: center;
 }
